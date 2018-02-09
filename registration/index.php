@@ -38,6 +38,9 @@
 		
 		<?php endif ?>
 
+		<p>
+			<b><a href="login.php"> User Login</a></b>
+		</p>
 	</div>
 	
 </body>

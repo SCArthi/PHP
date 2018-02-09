@@ -9,7 +9,7 @@
 	$db = mysqli_connect('localhost','root','','registration');
 
 	//if the register button is clicked
-	if (isset($_POST['register'])) {
+	if (isset($_POST['registration'])) {
 		$username = mysql_real_escape_string($_POST['username']);
 		$email = mysql_real_escape_string($_POST['email']);
 		$password_1 = mysql_real_escape_string($_POST['password_1']);
@@ -47,8 +47,8 @@
 
 	//log user in from login page
 	if (isset($_POST['login'])) {
-		$username = mysql_real_escape_string($_POST['username']);
-		$password = mysql_real_escape_string($_POST['password']);
+		$username = mysqli_real_escape_string($_POST['username']);
+		$password = mysqli_real_escape_string($_POST['password']);
 
 		//ensure that form fields are filled properly
 
